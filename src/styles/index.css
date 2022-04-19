@@ -1,13 +1,96 @@
+:root {
+    --color-dark: #161616;
+    --color-ocean: #416dea;
+    --color-grass: #3dd28d;
+    --color-snow: #FFFFFF;
+    --color-blur: #f2f2f2;
+    --color-salmon: #F32C52;
+    --color-sun: #feee7d;
+    --color-alge: #7999a9;
+    --color-flower: #353866;
+    --color-smoke: #e4e4e4;
+
+    --borderRadius: 36px;
+
+    --font-face: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 1%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.box {
+    border-radius: 5px;
+    border: 1px black solid;
+    padding: 1%;
+    margin-top: 1%;
+}
+
+.author {
+    display: flex;
+    align-content: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 1px black solid;
+}
+
+.avatar-name {
+    margin-left: 1%;
+}
+
+.loadMore {
+    position: absolute;
+    left: 0;
+    right: 0;
+
+
+    margin: 1%;
+    padding: 1% 1%;
+
+    cursor: pointer;
+    user-select: none;
+    transition: all 150ms linear;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+
+    border: 0 none;
+    border-radius: var(--borderRadius);
+
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.3;
+    font-family: var(--font-face);
+
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color-dark);
+    background-color: var(--color-blur);
+}
+
+.loadMore:hover {
+    color: white;
+    background-color: var(--color-ocean);
+    opacity: 0.8
+}
+
+.loadMore:active {
+    color: white;
+    background-color: var(--color-ocean);
+    opacity: 1
 }

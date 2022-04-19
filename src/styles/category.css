@@ -1,0 +1,50 @@
+/*button styles*/
+.category {
+    display: flex;
+    overflow: hidden;
+
+    margin: 0.2%;
+    padding: 1% 1%;
+
+    cursor: pointer;
+    user-select: none;
+    transition: all 150ms linear;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+
+    color: var(--color-snow);
+    background: var(--color-ocean);
+
+    border: 0 none;
+    border-radius: var(--borderRadius);
+
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: var(--font-face);
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.category:hover {
+    transition: all 150ms linear;
+    opacity: .85;
+}
+
+.category:active {
+    transition: all 150ms linear;
+    opacity: .75;
+}
+
+.category:focus {
+    color: var(--color-snow);
+    background: var(--color-dark);
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+}
